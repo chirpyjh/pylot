@@ -159,12 +159,12 @@ git clone https://github.com/mileyan/AnyNet.git
 cd AnyNet/models/spn_t1/ ; python3 setup.py clean ; python3 setup.py build
 
 ###### Download the Carla simulator ######
-echo "[x] Downloading the CARLA 0.9.10.1 simulator..."
-cd $PYLOT_HOME/dependencies/
-if [ "$1" != 'challenge' ] && [ ! -d "CARLA_0.9.10.1" ]; then
-    mkdir CARLA_0.9.10.1
-    cd CARLA_0.9.10.1
-    wget https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/CARLA_0.9.10.1.tar.gz
-    tar -xvf CARLA_0.9.10.1.tar.gz
-    rm CARLA_0.9.10.1.tar.gz
-fi
+# echo "[x] Downloading the CARLA 0.9.10.1 simulator..."
+# cd $PYLOT_HOME/dependencies/
+# if [ "$1" != 'challenge' ] && [ ! -d "CARLA_0.9.10.1" ]; then
+#     mkdir CARLA_0.9.10.1
+#     cd CARLA_0.9.10.1
+#     wget https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/CARLA_0.9.10.1.tar.gz
+#     tar -xvf CARLA_0.9.10.1.tar.gz
+#     rm CARLA_0.9.10.1.tar.gz
+# fi
