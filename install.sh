@@ -1,4 +1,5 @@
 #!/bin/bash
+export FORCE_CUDA="1"
 
 if [ -z $PYLOT_HOME ] ; then
     PYLOT_HOME=$(pwd)
@@ -156,7 +157,7 @@ git clone https://github.com/ICGog/drn.git
 echo "[x] Cloning the AnyNet depth estimation code..."
 cd $PYLOT_HOME/dependencies/
 git clone https://github.com/mileyan/AnyNet.git
-cd AnyNet/models/spn_t1/ ; python3 setup.py clean ; python3 setup.py build
+cd AnyNet/models/spn_t1/ ; python3 setup.py clean ; FORCE_CUDA=1 python3 setup.py build
 
 ###### Download the Carla simulator ######
 # echo "[x] Downloading the CARLA 0.9.10.1 simulator..."
